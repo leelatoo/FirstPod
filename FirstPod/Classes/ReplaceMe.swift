@@ -1,5 +1,6 @@
 
 import Foundation
+import MSAL
 
 public class Logger
 {

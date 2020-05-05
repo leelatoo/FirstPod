@@ -1,15 +1,24 @@
 PODS:
-  - FirstPod (0.1.0)
+  - FirstPod (0.1.0):
+    - MSAL (= 1.1.2)
+  - MSAL (1.1.2):
+    - MSAL/app-lib (= 1.1.2)
+  - MSAL/app-lib (1.1.2)
 
 DEPENDENCIES:
   - FirstPod (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MSAL
 
 EXTERNAL SOURCES:
   FirstPod:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FirstPod: 8bcfd5088a475b5ef82a6ea8869af52544f6d8b2
+  FirstPod: c8ea3d6e9fc21a4fbb72da53c2581d4ad51ec476
+  MSAL: d62d5af3b89f9753be6d157035629bbd851e4d15
 
 PODFILE CHECKSUM: 754eaed8bbd0b1797eae4d33489797a77f791cd1
 

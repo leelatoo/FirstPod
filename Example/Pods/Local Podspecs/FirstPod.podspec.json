@@ -3,20 +3,30 @@
   "version": "0.1.0",
   "summary": "A short description of FirstPod.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Leela/FirstPod",
+  "homepage": "https://github.com/leelatoo/FirstPod",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Leela": "leeladevi.balasundaram@ey.com"
+    "Leela": "leelabalasundaram@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Leela/FirstPod.git",
+    "git": "https://github.com/leelatoo/FirstPod.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
-  "source_files": "FirstPod/Classes/**/*"
+  "source_files": "FirstPod/Classes/**/*",
+  "resource_bundles": {
+    "Resources": [
+      "FirstPod/Resources/*.storyboard"
+    ]
+  },
+  "dependencies": {
+    "MSAL": [
+      "1.1.2"
+    ]
+  }
 }
