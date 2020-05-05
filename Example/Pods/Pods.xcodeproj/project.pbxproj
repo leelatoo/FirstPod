@@ -710,7 +710,7 @@
 		EB4A0BCF428C0EFECA1A70D220F73110 /* MSIDSSOExtensionInteractiveTokenRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2D33F6B9F739DD27A27B59E3963DB /* MSIDSSOExtensionInteractiveTokenRequestController.m */; };
 		EB522B00EF349D3264820637F412B830 /* MSIDLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B221699FBFB512C860F751A6CECAB23 /* MSIDLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EB64A050DD160421CB159868FC8A8F7C /* MSIDWebOAuth2AuthCodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E095EBCC94F5CDB775B7CF21D5BB49BB /* MSIDWebOAuth2AuthCodeResponse.m */; };
-		EBE38657259228C850E4FFCE95C6B2E4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00B40A18B2C895E8F0951F5624829A /* ReplaceMe.swift */; };
+		EBE38657259228C850E4FFCE95C6B2E4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00B40A18B2C895E8F0951F5624829A /* Logger.swift */; };
 		EC3E1834AAD2F2723B6F92DD2C895949 /* MSALHTTPConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1484BB775B93111848E5E147DE9458A3 /* MSALHTTPConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4179F3647104381AD9281D22A1D243 /* MSIDAADV1Oauth2Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C05A49D734C8E8D167C98E4EDDE660C /* MSIDAADV1Oauth2Factory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC80C7A886CD3CE2BC378D62381A3D81 /* MSIDAADAuthorizationCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4313234EC3C81A917E8C81F2CB557AB4 /* MSIDAADAuthorizationCodeRequest.m */; };
@@ -845,7 +845,7 @@
 		076852255E13E94486ADDA4C5589E81C /* MSIDAADV1RefreshTokenGrantRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADV1RefreshTokenGrantRequest.h; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADV1RefreshTokenGrantRequest.h; sourceTree = "<group>"; };
 		07BDD98EA808838873154DEA2A1EA483 /* MSALTelemetryApiId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALTelemetryApiId.h; path = MSAL/src/MSALTelemetryApiId.h; sourceTree = "<group>"; };
 		07DDA05AEAAA696782DA1FE12252434D /* MSIDADFSAuthority.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDADFSAuthority.m; path = MSAL/IdentityCore/IdentityCore/src/validation/MSIDADFSAuthority.m; sourceTree = "<group>"; };
-		07FF532D124FFF8567F6B7C7585EB6E6 /* MSAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSAL.framework; path = MSAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FF532D124FFF8567F6B7C7585EB6E6 /* MSAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08519177884290AD9AD73B03388134FF /* MSIDDefaultTokenResponseValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDDefaultTokenResponseValidator.m; path = MSAL/IdentityCore/IdentityCore/src/requests/sdk/msal/MSIDDefaultTokenResponseValidator.m; sourceTree = "<group>"; };
 		0855A4FACEFE9A943D67024CE9C6DA3A /* Pods-FirstPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirstPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0921A919974A80F9F4608FFFCCE0901D /* MSIDBrokerBrowserOperationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDBrokerBrowserOperationResponse.m; path = MSAL/IdentityCore/IdentityCore/src/broker_operation/response/MSIDBrokerBrowserOperationResponse.m; sourceTree = "<group>"; };
@@ -858,7 +858,7 @@
 		09B8618D6A5A1FB0A2B1E3F64AC575DD /* MSALAccountEnumerationParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALAccountEnumerationParameters.h; path = MSAL/src/public/MSALAccountEnumerationParameters.h; sourceTree = "<group>"; };
 		0A4C92AADC88C28576AD45BAED56B1FD /* MSIDAuthorityCacheRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAuthorityCacheRecord.h; path = MSAL/IdentityCore/IdentityCore/src/validation/MSIDAuthorityCacheRecord.h; sourceTree = "<group>"; };
 		0A7A8F420E31380B840C1F90D6AFA735 /* MSIDCredentialCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDCredentialCacheItem.h; path = MSAL/IdentityCore/IdentityCore/src/cache/token/MSIDCredentialCacheItem.h; sourceTree = "<group>"; };
-		0B00B40A18B2C895E8F0951F5624829A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FirstPod/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0B00B40A18B2C895E8F0951F5624829A /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = FirstPod/Classes/Logger.swift; sourceTree = "<group>"; };
 		0B52998A0EAC7D0371F26C817B96A11E /* MSIDJsonSerializableFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDJsonSerializableFactory.m; path = MSAL/IdentityCore/IdentityCore/src/MSIDJsonSerializableFactory.m; sourceTree = "<group>"; };
 		0B618E52FCAFF6F7820E4681E8A6A575 /* MSIDLegacyBrokerTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDLegacyBrokerTokenRequest.h; path = MSAL/IdentityCore/IdentityCore/src/requests/sdk/adal/MSIDLegacyBrokerTokenRequest.h; sourceTree = "<group>"; };
 		0B735DFA81C9251B3C98EB838301ECB0 /* MSIDTelemetryCacheEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDTelemetryCacheEvent.h; path = MSAL/IdentityCore/IdentityCore/src/telemetry/MSIDTelemetryCacheEvent.h; sourceTree = "<group>"; };
@@ -1041,7 +1041,7 @@
 		4890B5DF5BA16FEC8304ED0CC18BB3AA /* MSIDBaseRequestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDBaseRequestController.h; path = MSAL/IdentityCore/IdentityCore/src/controllers/MSIDBaseRequestController.h; sourceTree = "<group>"; };
 		48F598216CEC3CEEA907F8BA735779B6 /* MSIDInteractiveTokenRequestParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDInteractiveTokenRequestParameters.m; path = MSAL/IdentityCore/IdentityCore/src/parameters/MSIDInteractiveTokenRequestParameters.m; sourceTree = "<group>"; };
 		4986F53C4069848C691A2C4C2B75E946 /* MSIDGetV1IdTokenCacheEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDGetV1IdTokenCacheEvent.h; path = MSAL/IdentityCore/IdentityCore/src/telemetry/MSIDGetV1IdTokenCacheEvent.h; sourceTree = "<group>"; };
-		49F3C460706B3192028CE409250B02FF /* FirstPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirstPod.framework; path = FirstPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F3C460706B3192028CE409250B02FF /* FirstPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5CAD444766A15D6FA367F27C3315AB /* MSIDInteractiveTokenRequest+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSIDInteractiveTokenRequest+Internal.h"; path = "MSAL/IdentityCore/IdentityCore/src/requests/MSIDInteractiveTokenRequest+Internal.h"; sourceTree = "<group>"; };
 		4A6143257198A36CF88CD51F96B77BF4 /* MSIDIdToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDIdToken.h; path = MSAL/IdentityCore/IdentityCore/src/oauth2/token/MSIDIdToken.h; sourceTree = "<group>"; };
 		4A7943518EDB7240DA27CFE195ED51B5 /* MSIDGeneralCacheItemType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDGeneralCacheItemType.m; path = MSAL/IdentityCore/IdentityCore/src/oauth2/appmetadata/MSIDGeneralCacheItemType.m; sourceTree = "<group>"; };
@@ -1061,12 +1061,12 @@
 		4EDA322418250D0997DD7423B0C45D9A /* MSALPromptType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALPromptType.m; path = MSAL/src/MSALPromptType.m; sourceTree = "<group>"; };
 		4F0E5BA7A43129BEDC6825933BC96C86 /* MSIDCacheItemSerializing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDCacheItemSerializing.h; path = MSAL/IdentityCore/IdentityCore/src/cache/serializers/MSIDCacheItemSerializing.h; sourceTree = "<group>"; };
 		4F6E83F7C9179C463B70B319526DF319 /* MSAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAL.debug.xcconfig; sourceTree = "<group>"; };
-		4F8A8A89768E53841F5FAAE03C6301B1 /* FirstPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FirstPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F8A8A89768E53841F5FAAE03C6301B1 /* FirstPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FirstPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4F8D1E5D60B8EDAA09DB37CD4D4589FC /* MSALAuthority.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALAuthority.m; path = MSAL/src/instance/MSALAuthority.m; sourceTree = "<group>"; };
 		4F91142C1EEDEE1219EF3AA595FAF84C /* MSIDAADAuthorityMetadataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADAuthorityMetadataResponse.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADAuthorityMetadataResponse.m; sourceTree = "<group>"; };
 		4FD75C24BCABA852A2368D791E7A0EEC /* MSALErrorConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALErrorConverter.h; path = MSAL/src/MSALErrorConverter.h; sourceTree = "<group>"; };
 		50449B44802A713DD011E19F592B2187 /* MSIDTokenResponseValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDTokenResponseValidator.h; path = MSAL/IdentityCore/IdentityCore/src/requests/sdk/MSIDTokenResponseValidator.h; sourceTree = "<group>"; };
-		50538475EF7A299D3BD69D7065756397 /* Pods_FirstPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FirstPod_Example.framework; path = "Pods-FirstPod_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50538475EF7A299D3BD69D7065756397 /* Pods_FirstPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F9A85D83AB4872B74FAC4A82EBE31 /* MSIDIdTokenClaims.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDIdTokenClaims.h; path = MSAL/IdentityCore/IdentityCore/src/oauth2/MSIDIdTokenClaims.h; sourceTree = "<group>"; };
 		50A0D063E051AB4CE0335495AE84F1A3 /* MSIDBaseRequestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDBaseRequestController.m; path = MSAL/IdentityCore/IdentityCore/src/controllers/MSIDBaseRequestController.m; sourceTree = "<group>"; };
 		51FE5795471CD4CEC347F3F19F583DB1 /* MSIDAADV1AuthorizationCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADV1AuthorizationCodeRequest.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADV1AuthorizationCodeRequest.m; sourceTree = "<group>"; };
@@ -1139,7 +1139,7 @@
 		67AE9D1D62CE22DCB8DBD1EA72762F8C /* MSALError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALError.m; path = MSAL/src/MSALError.m; sourceTree = "<group>"; };
 		67AF6EF82855F68D0981CD23A58DD7AC /* FirstPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirstPod-prefix.pch"; sourceTree = "<group>"; };
 		6844687C553512203963D08E014EFEB8 /* MSALTokenParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALTokenParameters.m; path = MSAL/src/MSALTokenParameters.m; sourceTree = "<group>"; };
-		6879B6ECA2A90BB0F0CAFA26DAB75460 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6879B6ECA2A90BB0F0CAFA26DAB75460 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		68B17E78788B9DABC3CDE044190585F5 /* Pods-FirstPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FirstPod_Example-umbrella.h"; sourceTree = "<group>"; };
 		6907B3CF04D48C9D0EEE20CF4196059B /* MSALAuthority_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALAuthority_Internal.h; path = MSAL/src/instance/MSALAuthority_Internal.h; sourceTree = "<group>"; };
 		69985895D19393DF65AFEEC6EAFE955D /* MSIDMetadataCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDMetadataCache.h; path = MSAL/IdentityCore/IdentityCore/src/cache/metadata/MSIDMetadataCache.h; sourceTree = "<group>"; };
@@ -1305,7 +1305,7 @@
 		96697700D1479907862BE1D2DDF48D77 /* MSIDDefaultAccountCacheKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDDefaultAccountCacheKey.m; path = MSAL/IdentityCore/IdentityCore/src/cache/key/MSIDDefaultAccountCacheKey.m; sourceTree = "<group>"; };
 		96BCFD2199FCBCC4F9FEE911BDF7612A /* NSKeyedArchiver+MSIDExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedArchiver+MSIDExtensions.h"; path = "MSAL/IdentityCore/IdentityCore/src/util/NSKeyedArchiver+MSIDExtensions.h"; sourceTree = "<group>"; };
 		96C17ED6E77BF3D22349E0B4104D839B /* MSIDBrokerOperationSilentTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDBrokerOperationSilentTokenRequest.h; path = MSAL/IdentityCore/IdentityCore/src/broker_operation/request/silent_token_request/MSIDBrokerOperationSilentTokenRequest.h; sourceTree = "<group>"; };
-		970601BCDAB90E9D2CEAE92C3ED25B8F /* Pods_FirstPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FirstPod_Tests.framework; path = "Pods-FirstPod_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		970601BCDAB90E9D2CEAE92C3ED25B8F /* Pods_FirstPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970D29FD882126ABC4D5B397B0C05FCA /* MSALGlobalConfig+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSALGlobalConfig+Internal.h"; path = "MSAL/src/configuration/MSALGlobalConfig+Internal.h"; sourceTree = "<group>"; };
 		971C9EBD2567529AAA0100D77B3FBD99 /* MSIDMaskedLogParameter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDMaskedLogParameter.m; path = MSAL/IdentityCore/IdentityCore/src/logger/MSIDMaskedLogParameter.m; sourceTree = "<group>"; };
 		97DB88A8FB258679AEC32BCE5100F2BF /* MSIDChallengeHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDChallengeHandling.h; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/challangeHandlers/MSIDChallengeHandling.h; sourceTree = "<group>"; };
@@ -1327,7 +1327,7 @@
 		9C9C610A03AEEE5218DA5462141EF959 /* MSIDNTLMUIPrompt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDNTLMUIPrompt.m; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/ui/ios/MSIDNTLMUIPrompt.m; sourceTree = "<group>"; };
 		9CAAB05A08E8A473CDFC70940181B741 /* MSALAccountId+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSALAccountId+Internal.h"; path = "MSAL/src/MSALAccountId+Internal.h"; sourceTree = "<group>"; };
 		9D241E4AAD5FC0A4DE868548F40F9298 /* MSIDAADV2WebviewFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADV2WebviewFactory.h; path = MSAL/IdentityCore/IdentityCore/src/oauth2/aad_v2/MSIDAADV2WebviewFactory.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5942379C76A12AF8E7A966B973EFD9 /* MSIDLocalInteractiveController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDLocalInteractiveController.m; path = MSAL/IdentityCore/IdentityCore/src/controllers/MSIDLocalInteractiveController.m; sourceTree = "<group>"; };
 		9EBC8FC12A40216014A7D4A514180F06 /* MSALOauth2Authority.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALOauth2Authority.m; path = MSAL/src/instance/MSALOauth2Authority.m; sourceTree = "<group>"; };
 		9F825C4D9FAC24BFD10E5F03235E51FE /* MSALPublicClientApplicationConfig+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSALPublicClientApplicationConfig+Internal.h"; path = "MSAL/src/configuration/MSALPublicClientApplicationConfig+Internal.h"; sourceTree = "<group>"; };
@@ -1416,7 +1416,7 @@
 		BCE62E494BBF9E3B999004283DB5592F /* MSIDSFAuthenticationSessionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDSFAuthenticationSessionHandler.h; path = MSAL/IdentityCore/IdentityCore/src/webview/systemWebview/ios/MSIDSFAuthenticationSessionHandler.h; sourceTree = "<group>"; };
 		BF2BDAD41204A7C312916D9FA9D63A75 /* MSIDWebviewSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDWebviewSession.h; path = MSAL/IdentityCore/IdentityCore/src/webview/MSIDWebviewSession.h; sourceTree = "<group>"; };
 		BF5B92425FFE180954FF02E6553EC490 /* FirstPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirstPod-dummy.m"; sourceTree = "<group>"; };
-		BF67BC4BC4AD67020B40045CAB1A18CB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BF67BC4BC4AD67020B40045CAB1A18CB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BFCE025B32D093C422215482F9895B74 /* MSIDBrokerOperationInteractiveTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDBrokerOperationInteractiveTokenRequest.h; path = MSAL/IdentityCore/IdentityCore/src/broker_operation/request/interactive_token_request/MSIDBrokerOperationInteractiveTokenRequest.h; sourceTree = "<group>"; };
 		BFD85B528954A0E37CF961511E540559 /* MSIDKeychainUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDKeychainUtil.h; path = MSAL/IdentityCore/IdentityCore/src/util/MSIDKeychainUtil.h; sourceTree = "<group>"; };
 		BFED3D58531042715FE92FFDEF80C66C /* MSALLegacySharedMSAAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALLegacySharedMSAAccount.h; path = MSAL/src/configuration/external/ios/MSALLegacySharedMSAAccount.h; sourceTree = "<group>"; };
@@ -1510,7 +1510,7 @@
 		DCE060F4E10BBAA18F0FD8902198C75E /* MSIDSilentTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDSilentTokenRequest.m; path = MSAL/IdentityCore/IdentityCore/src/requests/MSIDSilentTokenRequest.m; sourceTree = "<group>"; };
 		DD17FAC45F0A098EDF07BEEBA5AAF252 /* MSALAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALAccount.m; path = MSAL/src/MSALAccount.m; sourceTree = "<group>"; };
 		DD6A664ACA4A0D828621DC1FF8A440FC /* MSALIndividualClaimRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALIndividualClaimRequest.m; path = MSAL/src/MSALIndividualClaimRequest.m; sourceTree = "<group>"; };
-		DE015121D8619D9B5CC82A82BDD602EE /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Resources.bundle; path = "FirstPod-Resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE015121D8619D9B5CC82A82BDD602EE /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45ED6E7C67E806E0AA2228F4A302D9 /* MSIDHttpRequestErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDHttpRequestErrorHandling.h; path = MSAL/IdentityCore/IdentityCore/src/network/error_handler/MSIDHttpRequestErrorHandling.h; sourceTree = "<group>"; };
 		DEBFD9DEA7952C06F902A620F89025E5 /* MSIDSSOExtensionTokenRequestDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDSSOExtensionTokenRequestDelegate.m; path = MSAL/IdentityCore/IdentityCore/src/requests/broker/MSIDSSOExtensionTokenRequestDelegate.m; sourceTree = "<group>"; };
 		DF468871487CE739AF51237BDA0089FF /* MSIDAccountCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAccountCacheItem.h; path = MSAL/IdentityCore/IdentityCore/src/cache/token/MSIDAccountCacheItem.h; sourceTree = "<group>"; };
@@ -1682,7 +1682,7 @@
 		122DBB6F4DC3E680B7C6DB8061AC6BAD /* FirstPod */ = {
 			isa = PBXGroup;
 			children = (
-				0B00B40A18B2C895E8F0951F5624829A /* ReplaceMe.swift */,
+				0B00B40A18B2C895E8F0951F5624829A /* Logger.swift */,
 				5BCF890185FE0FA208BFFFE0660EAECA /* Pod */,
 				A12F9D6B7E2BDDF5DA20DEB53F5C3D7F /* Support Files */,
 			);
@@ -1757,7 +1757,6 @@
 				B67223ED65437ED0BE8CDC5EB31C0429 /* app-lib */,
 				20F55A775FEB2727405E64F75C5CFDCC /* Support Files */,
 			);
-			name = MSAL;
 			path = MSAL;
 			sourceTree = "<group>";
 		};
@@ -3247,7 +3246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBE893522CAE8E396BA647FC0E245C4 /* FirstPod-dummy.m in Sources */,
-				EBE38657259228C850E4FFCE95C6B2E4 /* ReplaceMe.swift in Sources */,
+				EBE38657259228C850E4FFCE95C6B2E4 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4079,8 +4078,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
