@@ -9,7 +9,8 @@
 import UIKit
 import FirstPod
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var btn: UIButton!
@@ -18,7 +19,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -27,6 +29,9 @@ class ViewController: UIViewController {
     {
         let logger = Logger()
         logger.printLog(text: txtField.text ?? "no value")
+        
+        let firstPod = FirstPod()
+        firstPod.performSegueToFirspodEntryViewController(caller: self)
     }
 }
 

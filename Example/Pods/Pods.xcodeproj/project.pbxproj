@@ -719,6 +719,9 @@
 		ECF031B6938DCBA7E4B600788B6F65A2 /* MSIDAccountIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0692CD32D0C5F0A7D243EA099446810D /* MSIDAccountIdentifier.m */; };
 		ECFF372DF8AE2C281C5975F749DD232D /* MSIDAggregatedDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 034CEE15D8483F2260F3EFC75BF6AA09 /* MSIDAggregatedDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ED7CD6E5F0C4BFBC2619D8BD2CA55355 /* MSALSignoutParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA209D183F5FA423CBEA07361FB1E24 /* MSALSignoutParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED9BBCD8246236DE002178E6 /* TokenGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */; };
+		ED9BBCDA24623756002178E6 /* DeveloperOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */; };
+		ED9BBCDC2462384B002178E6 /* FirstPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCDB2462384B002178E6 /* FirstPod.swift */; };
 		EDA3789D2CEB79A15B8FC2F506602236 /* MSIDClientTLSHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D013E0E4AC868C35E448D339D0F8CD4A /* MSIDClientTLSHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EDC709AD121204F266C212CCE701A6E6 /* MSIDBrokerInvocationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48304AB340CF57850E03E2FF37AD36DE /* MSIDBrokerInvocationOptions.m */; };
 		EDDE7FA49A81033D4E4182735172C0FE /* MSIDAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = 30795FF77BAF1948636DAC31FC0FEA6F /* MSIDAuthority.m */; };
@@ -1553,6 +1556,9 @@
 		EC5F52987BDA4150870C0D2373497809 /* MSIDBaseWebRequestConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDBaseWebRequestConfiguration.m; path = MSAL/IdentityCore/IdentityCore/src/configuration/webview/MSIDBaseWebRequestConfiguration.m; sourceTree = "<group>"; };
 		ED102A07FB7FD0E5893376FB0D7F1CA5 /* MSIDCertAuthHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDCertAuthHandler.m; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/challangeHandlers/ios/MSIDCertAuthHandler.m; sourceTree = "<group>"; };
 		ED3B7FE073D856F8FC576CA12FCB603C /* MSIDOauth2Factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDOauth2Factory.h; path = MSAL/IdentityCore/IdentityCore/src/oauth2/MSIDOauth2Factory.h; sourceTree = "<group>"; };
+		ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TokenGenerator.storyboard; sourceTree = "<group>"; };
+		ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperOptionsViewController.swift; sourceTree = "<group>"; };
+		ED9BBCDB2462384B002178E6 /* FirstPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPod.swift; sourceTree = "<group>"; };
 		EDBED9BC39383CE7A0D5E8A5D3964E9A /* MSIDAADAuthorityMetadataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADAuthorityMetadataRequest.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADAuthorityMetadataRequest.m; sourceTree = "<group>"; };
 		EE22C974F15D4997DB56572FE475CCCF /* MSIDJsonSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDJsonSerializer.h; path = MSAL/IdentityCore/IdentityCore/src/MSIDJsonSerializer.h; sourceTree = "<group>"; };
 		EEC8680B979E49BC91385BF5493B1955 /* MSALOauth2ProviderFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALOauth2ProviderFactory.m; path = MSAL/src/instance/MSALOauth2ProviderFactory.m; sourceTree = "<group>"; };
@@ -1682,6 +1688,8 @@
 		122DBB6F4DC3E680B7C6DB8061AC6BAD /* FirstPod */ = {
 			isa = PBXGroup;
 			children = (
+				ED9BBCD624623696002178E6 /* Resources */,
+				ED9BBCD52462368B002178E6 /* Classes */,
 				0B00B40A18B2C895E8F0951F5624829A /* Logger.swift */,
 				5BCF890185FE0FA208BFFFE0660EAECA /* Pod */,
 				A12F9D6B7E2BDDF5DA20DEB53F5C3D7F /* Support Files */,
@@ -2609,6 +2617,23 @@
 			);
 			sourceTree = "<group>";
 		};
+		ED9BBCD52462368B002178E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */,
+				ED9BBCDB2462384B002178E6 /* FirstPod.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ED9BBCD624623696002178E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -3227,6 +3252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9BBCD8246236DE002178E6 /* TokenGenerator.storyboard in Resources */,
 				38BFD2AC7B464DD6E8CDC86C09C0B09A /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3245,7 +3271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9BBCDC2462384B002178E6 /* FirstPod.swift in Sources */,
 				0EBE893522CAE8E396BA647FC0E245C4 /* FirstPod-dummy.m in Sources */,
+				ED9BBCDA24623756002178E6 /* DeveloperOptionsViewController.swift in Sources */,
 				EBE38657259228C850E4FFCE95C6B2E4 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
