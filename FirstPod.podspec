@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FirstPod'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of FirstPod.'
+  s.summary          = 'This is a meaningfull summary.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,14 +26,15 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Leela' => 'leelabalasundaram@gmail.com' }
   s.source           = { :git => 'https://github.com/leelatoo/FirstPod.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version = '5.0'
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'FirstPod/Classes/**/*'
   
    s.resource_bundles = {
-     'Resources' => ['FirstPod/Resources/*.storyboard']
+     'Resources' => ['FirstPod/Assets/TokenGenerator.storyboard']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
