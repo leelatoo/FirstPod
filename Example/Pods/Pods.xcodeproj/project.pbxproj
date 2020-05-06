@@ -722,6 +722,13 @@
 		ED9BBCD8246236DE002178E6 /* TokenGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */; };
 		ED9BBCDA24623756002178E6 /* DeveloperOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */; };
 		ED9BBCDC2462384B002178E6 /* FirstPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCDB2462384B002178E6 /* FirstPod.swift */; };
+		ED9BBCE224630FF1002178E6 /* AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCDE24630FF1002178E6 /* AuthResult.swift */; };
+		ED9BBCE324630FF1002178E6 /* TenantProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCDF24630FF1002178E6 /* TenantProfile.swift */; };
+		ED9BBCE424630FF1002178E6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCE024630FF1002178E6 /* Account.swift */; };
+		ED9BBCE524630FF1002178E6 /* MSALResultToAuthResultConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCE124630FF1002178E6 /* MSALResultToAuthResultConverter.swift */; };
+		ED9BBCE724631431002178E6 /* TokenRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCE624631431002178E6 /* TokenRequestViewController.swift */; };
+		ED9BBCE92463151F002178E6 /* TokenDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCE82463151F002178E6 /* TokenDetailsViewController.swift */; };
+		ED9BBCEB24631589002178E6 /* RawTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9BBCEA24631589002178E6 /* RawTokenViewController.swift */; };
 		EDA3789D2CEB79A15B8FC2F506602236 /* MSIDClientTLSHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D013E0E4AC868C35E448D339D0F8CD4A /* MSIDClientTLSHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EDC709AD121204F266C212CCE701A6E6 /* MSIDBrokerInvocationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48304AB340CF57850E03E2FF37AD36DE /* MSIDBrokerInvocationOptions.m */; };
 		EDDE7FA49A81033D4E4182735172C0FE /* MSIDAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = 30795FF77BAF1948636DAC31FC0FEA6F /* MSIDAuthority.m */; };
@@ -1559,6 +1566,13 @@
 		ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TokenGenerator.storyboard; sourceTree = "<group>"; };
 		ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperOptionsViewController.swift; sourceTree = "<group>"; };
 		ED9BBCDB2462384B002178E6 /* FirstPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPod.swift; sourceTree = "<group>"; };
+		ED9BBCDE24630FF1002178E6 /* AuthResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
+		ED9BBCDF24630FF1002178E6 /* TenantProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantProfile.swift; sourceTree = "<group>"; };
+		ED9BBCE024630FF1002178E6 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		ED9BBCE124630FF1002178E6 /* MSALResultToAuthResultConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSALResultToAuthResultConverter.swift; sourceTree = "<group>"; };
+		ED9BBCE624631431002178E6 /* TokenRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestViewController.swift; sourceTree = "<group>"; };
+		ED9BBCE82463151F002178E6 /* TokenDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDetailsViewController.swift; sourceTree = "<group>"; };
+		ED9BBCEA24631589002178E6 /* RawTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawTokenViewController.swift; sourceTree = "<group>"; };
 		EDBED9BC39383CE7A0D5E8A5D3964E9A /* MSIDAADAuthorityMetadataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADAuthorityMetadataRequest.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADAuthorityMetadataRequest.m; sourceTree = "<group>"; };
 		EE22C974F15D4997DB56572FE475CCCF /* MSIDJsonSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDJsonSerializer.h; path = MSAL/IdentityCore/IdentityCore/src/MSIDJsonSerializer.h; sourceTree = "<group>"; };
 		EEC8680B979E49BC91385BF5493B1955 /* MSALOauth2ProviderFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALOauth2ProviderFactory.m; path = MSAL/src/instance/MSALOauth2ProviderFactory.m; sourceTree = "<group>"; };
@@ -2620,8 +2634,12 @@
 		ED9BBCD52462368B002178E6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ED9BBCDD24630FF1002178E6 /* Dto */,
 				ED9BBCD924623756002178E6 /* DeveloperOptionsViewController.swift */,
 				ED9BBCDB2462384B002178E6 /* FirstPod.swift */,
+				ED9BBCE624631431002178E6 /* TokenRequestViewController.swift */,
+				ED9BBCE82463151F002178E6 /* TokenDetailsViewController.swift */,
+				ED9BBCEA24631589002178E6 /* RawTokenViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2632,6 +2650,17 @@
 				ED9BBCD7246236DE002178E6 /* TokenGenerator.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED9BBCDD24630FF1002178E6 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				ED9BBCDE24630FF1002178E6 /* AuthResult.swift */,
+				ED9BBCDF24630FF1002178E6 /* TenantProfile.swift */,
+				ED9BBCE024630FF1002178E6 /* Account.swift */,
+				ED9BBCE124630FF1002178E6 /* MSALResultToAuthResultConverter.swift */,
+			);
+			path = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3271,10 +3300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9BBCE524630FF1002178E6 /* MSALResultToAuthResultConverter.swift in Sources */,
 				ED9BBCDC2462384B002178E6 /* FirstPod.swift in Sources */,
+				ED9BBCE224630FF1002178E6 /* AuthResult.swift in Sources */,
 				0EBE893522CAE8E396BA647FC0E245C4 /* FirstPod-dummy.m in Sources */,
 				ED9BBCDA24623756002178E6 /* DeveloperOptionsViewController.swift in Sources */,
 				EBE38657259228C850E4FFCE95C6B2E4 /* Logger.swift in Sources */,
+				ED9BBCEB24631589002178E6 /* RawTokenViewController.swift in Sources */,
+				ED9BBCE724631431002178E6 /* TokenRequestViewController.swift in Sources */,
+				ED9BBCE324630FF1002178E6 /* TenantProfile.swift in Sources */,
+				ED9BBCE92463151F002178E6 /* TokenDetailsViewController.swift in Sources */,
+				ED9BBCE424630FF1002178E6 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
