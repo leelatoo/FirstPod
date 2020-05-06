@@ -28,7 +28,7 @@ class ViewController: UIViewController
     @IBAction func BtnClicked(_ sender: Any)
     {
         let logger = Logger()
-        logger.printLog(text: txtField.text ?? "no value")
+        logger.printLog(text: "test")
         
         let firstPod = FirstPod()
         firstPod.performSegueToFirspodEntryViewController(caller: self)

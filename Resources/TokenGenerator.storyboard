@@ -33,18 +33,18 @@
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="yyj-5Y-5tt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MSAL Demo" id="Jao-MO-Eic"/>
+                    <navigationItem key="navigationItem" id="Jao-MO-Eic"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gth-ij-DDi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="133.92857142857142"/>
         </scene>
-        <!--Token Request View Controller-->
+        <!--Request Token-->
         <scene sceneID="JQG-pU-ADl">
             <objects>
                 <viewController id="jmG-PY-AFq" customClass="TokenRequestViewController" customModule="FirstPod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ta-Ts-hDu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="A0X-CO-E8o">
@@ -166,7 +166,7 @@
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="rR8-PR-eL6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sfo-Il-RGw"/>
+                    <navigationItem key="navigationItem" title="Request Token" id="Sfo-Il-RGw"/>
                     <connections>
                         <outlet property="authorityTenantUriTxtFld" destination="FrR-zg-B5i" id="e2f-B1-iKa"/>
                         <outlet property="azureAppClientIdTxtFld" destination="ckm-Mk-QMy" id="BzM-vG-amW"/>
@@ -180,18 +180,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3N-gm-j6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="134"/>
+            <point key="canvasLocation" x="2834.7826086956525" y="133.92857142857142"/>
         </scene>
-        <!--Token Details View Controller-->
+        <!--Details-->
         <scene sceneID="NmS-68-IMl">
             <objects>
                 <viewController id="93T-fk-XNF" customClass="TokenDetailsViewController" customModule="FirstPod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nHn-km-2nt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hM2-eh-FAg">
+                                <rect key="frame" x="20" y="142" width="324" height="595"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-X5-lfA">
-                                <rect key="frame" x="20" y="72" width="324" height="46"/>
+                                <rect key="frame" x="45" y="121" width="324" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -202,18 +209,11 @@
                                     <action selector="RawBtnClicked:" destination="93T-fk-XNF" eventType="touchUpInside" id="eX8-B5-O7f"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hM2-eh-FAg">
-                                <rect key="frame" x="20" y="142" width="324" height="595"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Xdh-vv-SbG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KQ1-c9-kbS"/>
+                    <navigationItem key="navigationItem" title="Details" id="KQ1-c9-kbS"/>
                     <connections>
                         <outlet property="tokenDetailsTxtField" destination="hM2-eh-FAg" id="ngw-PZ-Lnd"/>
                         <segue destination="Ire-iv-Slm" kind="show" identifier="rawtokensegue" id="3EJ-nN-81c"/>
@@ -221,14 +221,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzg-T8-r4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2751" y="134"/>
+            <point key="canvasLocation" x="3660.8695652173915" y="133.92857142857142"/>
         </scene>
-        <!--Raw Token View Controller-->
+        <!--Raw Token-->
         <scene sceneID="5ct-OM-8L4">
             <objects>
                 <viewController id="Ire-iv-Slm" customClass="RawTokenViewController" customModule="FirstPod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SS-CA-TqV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-aN-tae">
@@ -242,14 +242,32 @@
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZRq-Lp-ZW0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LiY-sB-obX"/>
+                    <navigationItem key="navigationItem" title="Raw Token" id="LiY-sB-obX"/>
                     <connections>
                         <outlet property="tokenTxtFld" destination="d5A-aN-tae" id="jQo-jm-33U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwZ-SO-PWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3591" y="134"/>
+            <point key="canvasLocation" x="4500" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eUA-94-U01">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ooe-Hf-H09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zIA-91-hIS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="asO-3d-OPO" kind="relationship" relationship="rootViewController" id="ays-I6-X8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2F9-XF-fJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>
