@@ -30,8 +30,14 @@ class ViewController: UIViewController
         let logger = Logger()
         logger.printLog(text: "test")
         
-        let firstPod = FirstPod()
-        firstPod.performSegueToFirspodEntryViewController(caller: self)
+        
+        //Set App sepcific values in FirstPod and Navigate
+        FirstPod.kClientID = "852e8054-ba53-4814-ae1c-6901166d0a06"
+        FirstPod.kGraphEndpoint = "https://sites.ey.com"
+        FirstPod.kAuthority = "https://login.microsoftonline.com/5b973f99-77df-4beb-b27d-aa0c70b8482c/"
+        FirstPod.kScopes = ["user.read"]
+        FirstPod.redirectUri = "msauth.com.eygsl.ctmob.xformsrefdebug"
+        FirstPod.performSegueToFirspodEntryViewController(caller: self)
     }
 }
 

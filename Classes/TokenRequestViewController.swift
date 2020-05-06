@@ -11,10 +11,10 @@ import MSAL
 class TokenRequestViewController: UIViewController
 {
 
-        let kClientID = "852e8054-ba53-4814-ae1c-6901166d0a06"
-        let kGraphEndpoint = "https://sites.ey.com"
-        let kAuthority = "https://login.microsoftonline.com/5b973f99-77df-4beb-b27d-aa0c70b8482c/"
-        let kScopes: [String] = ["user.read"]
+//        let kClientID = "852e8054-ba53-4814-ae1c-6901166d0a06"
+//        let kGraphEndpoint = "https://sites.ey.com"
+//        let kAuthority = "https://login.microsoftonline.com/5b973f99-77df-4beb-b27d-aa0c70b8482c/"
+//        let kScopes: [String] = ["user.read"]
         
         var accessToken = String()
         var applicationContext : MSALPublicClientApplication?
@@ -68,10 +68,10 @@ class TokenRequestViewController: UIViewController
         func SetUi()
         {
             viewTokenBtn.isEnabled = false
-            azureAppClientIdTxtFld.text = kClientID
-            authorityTenantUriTxtFld.text = kAuthority
-            resourceAudienceTxtFld.text = kGraphEndpoint
-            redirectUriTxtFld.text = "msauth.com.eygsl.ctmob.xformsrefdebug"
+            azureAppClientIdTxtFld.text = FirstPod.kClientID
+            authorityTenantUriTxtFld.text = FirstPod.kAuthority
+            resourceAudienceTxtFld.text = FirstPod.kGraphEndpoint
+            redirectUriTxtFld.text = FirstPod.redirectUri
             tokenStatusLabel.text = "No Token"
 
 //            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
@@ -84,14 +84,14 @@ class TokenRequestViewController: UIViewController
 
         func initMSAL() throws
         {
-            guard let authorityURL = URL(string: kAuthority) else {
+            guard let authorityURL = URL(string: FirstPod.kAuthority) else {
                 print("Unable to create authority URL")
                 return
             }
             
             let authority = try MSALAADAuthority(url: authorityURL)
             
-            let msalConfiguration = MSALPublicClientApplicationConfig(clientId: kClientID, redirectUri: nil, authority: authority)
+            let msalConfiguration = MSALPublicClientApplicationConfig(clientId: FirstPod.kClientID, redirectUri: nil, authority: authority)
             self.applicationContext = try MSALPublicClientApplication(configuration: msalConfiguration)
             self.initWebViewParams()
         }
@@ -139,7 +139,7 @@ class TokenRequestViewController: UIViewController
            
         func getGraphEndpoint() -> String
         {
-           return kGraphEndpoint.hasSuffix("/") ? (kGraphEndpoint + "v1.0/me/") : (kGraphEndpoint + "/v1.0/me/");
+           return FirstPod.kGraphEndpoint.hasSuffix("/") ? (FirstPod.kGraphEndpoint + "v1.0/me/") : (FirstPod.kGraphEndpoint + "/v1.0/me/");
         }
         
         @IBAction func selectEndpointBtnClicked(_ sender: Any) {
@@ -180,7 +180,7 @@ class TokenRequestViewController: UIViewController
         {
             guard let applicationContext = self.applicationContext else { return }
             
-            let parameters = MSALSilentTokenParameters(scopes: kScopes, account: account)
+            let parameters = MSALSilentTokenParameters(scopes: FirstPod.kScopes, account: account)
             
             applicationContext.acquireTokenSilent(with: parameters) { (result, error) in
                 
@@ -221,7 +221,7 @@ class TokenRequestViewController: UIViewController
             guard let webViewParameters = webViewParamaters else { return }
                 
             // #1
-            let parameters = MSALInteractiveTokenParameters(scopes: kScopes, webviewParameters: webViewParameters)
+            let parameters = MSALInteractiveTokenParameters(scopes: FirstPod.kScopes, webviewParameters: webViewParameters)
             parameters.promptType = .selectAccount
                 
             // #2
