@@ -17,8 +17,12 @@ public class FirstPod: NSObject
     
     public static func performSegueToFirspodEntryViewController(caller: UIViewController)
     {
-        let storyboard = UIStoryboard(name: "TokenGenerator", bundle: Bundle(for: DeveloperOptionsViewController.self))
-        let vc = storyboard.instantiateViewController(withIdentifier: "DeveloperOptionsVC")
-        caller.show(vc, sender: nil)
+         let frameworkBundle = Bundle(for: Logger.self)
+         let path = frameworkBundle.path(forResource: "Resources", ofType: "bundle")
+         let resourcesBundle = Bundle(url: URL(fileURLWithPath: path!))
+
+         let storyboard = UIStoryboard(name: "TokenGenerator", bundle: resourcesBundle)
+         let vc = storyboard.instantiateViewController(withIdentifier: "DeveloperOptionsVC")
+         caller.show(vc, sender: nil)
     }
 }
